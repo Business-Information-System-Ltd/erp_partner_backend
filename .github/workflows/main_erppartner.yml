@@ -22,7 +22,7 @@ jobs:
       - name: Set up Python version
         uses: actions/setup-python@v5
         with:
-          python-version: '3.13'
+          python-version: '3.11'
 
       - name: Create and start virtual environment
         run: |
@@ -46,13 +46,17 @@ jobs:
       # - name: Zip artifact for deployment
       #   run: cd erp && zip -r ../release.zip . && cd ..
       
-      
+      - name: Zip artifact
+        run: |
+          cd erp
+          zip -r ../release.zip .
+
       
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v4
         with:
           name: python-app
-          path: erp/
+          path: release.zip
 
       # 🚫 Opting Out of Oryx Build
       # If you prefer to disable the Oryx build process during deployment, follow these steps:
@@ -89,5 +93,5 @@ jobs:
         with:
           app-name: 'erppartner'
           slot-name: 'Production'
-          package: .
+          package: release.zip
           
