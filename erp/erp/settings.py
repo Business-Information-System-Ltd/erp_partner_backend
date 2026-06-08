@@ -104,7 +104,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
-    "https://gentle-moss-03b9b8b0f.4.azurestaticapps.net",
+    "https://zealous-tree-0f0fcc60f.7.azurestaticapps.net",
 ]
 
 # Password validation
