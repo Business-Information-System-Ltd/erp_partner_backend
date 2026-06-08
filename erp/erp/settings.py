@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-#xeb5b(x+!1da(!6@%3y)anwae(ftfx-cgn+t6uh_615vg5%s9
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    "erppartner-hxbtdjc8hyh0cfcn.canadacentral-01.azurewebsites.net",
     "127.0.0.1",
     "localhost"
     ]
